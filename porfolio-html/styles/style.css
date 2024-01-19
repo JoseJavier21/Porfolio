@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap');
+
+
+/* General */
+
+*{
+    margin: 0;
+    font-family: 'Fira Code', monospace;
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background: #2D2758; 
+    /*background-color: #337781;*/
+    background: linear-gradient(to bottom, #2D2758, #7D72C5);
+}
+
+div{
+    /*background-color: #62C3CA;*/
+    background-color: #554D8F;
+    margin-top: 5%;
+    padding: 10px;
+    border-radius: 10px;
+}   
+
+
+
+/* Navegacion */
+
+
+nav{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    border-radius: 0px 0px 5px 5px;
+    background: #6960AA;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.50);
+    position: fixed;
+    top: 0;
+}
+
+nav > img{
+    height: 100px;
+    width: 100px;
+    margin-left: 5%;
+}
+
+
+ul{
+    list-style: none;
+    display: flex;
+    height: 33px;
+    margin: 15px;
+    align-items: center;
+    justify-content: end;
+}
+
+li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 32px;
+    flex-direction: column;
+    border-radius: 20px;
+    background: #C1ABEB;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.45);
+    margin: 0px 10px 0px 15px;
+}
+
+li > a{
+    text-decoration: none;
+    color: purple;
+    margin: auto;
+}
+
+li > a:hover{
+    text-decoration: none;
+    color: whitesmoke;
+    margin: auto;
+}
+
+
+li:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 32px;
+    flex-direction: column;
+    border-radius: 20px;
+    background: #7D72C5;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.45);
+    margin: 0px 10px 0px 15px;
+}
+
+
+
+/* Presentacion */
+
+#prese{
+    display: flex;
+    margin: 10% 30% 10% 15%;
+    padding-left: 20px;
+    font-size: larger;
+    color: whitesmoke;
+    align-items: center;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    
+}
+
+#prese > h2{
+    padding-top: 20px;
+}
+
+.nombre{
+    color: #c6a57a;
+    padding-top: 10px;
+}
+
+#prese > p{
+    display:flex;
+}
+
+#prese > img{
+    width: 35%;
+    padding: 20px 30px 20px 30px;
+    margin-left: auto;
+}
+
+.corchete{
+    width: 50px;
+    margin-left: 100px;
+    margin-top: 5%;
+}
+
+/* Habilidades */
+
+.habilidad{
+    background-color: rgba(240, 248, 255, 0);
+
+}
+
+.habilidad > h2{
+    color: #c6a57a;
+}
+
+.progress-bar {
+    display: flex;
+    align-items: center;
+    margin: 20px 40% 20px 40%;
+    background-color: #34333d;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+.skill {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #c6a57a;
+    background-color:#34333d;
+  }
+  
+.progress {
+    margin: 0%;
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #eee;
+    height: 15px;
+    border-radius: 50px;
+    overflow: hidden;
+  }
+  
+.progress-value {
+    margin: 0%;
+    padding-left: 0px;
+    border-radius: 50px;
+    background-color: #C6A57A;
+    height: 15px;
+    width: 0;
+    transition: width 1s ease;
+  }
+
+
+span > .corchete > p{
+    display: inline-flex;
+}
+
+
+/* Trabajos */
+
+
+#work{
+    display: flex;
+    width: 60%;
+    margin: 5% 20% 10% 20%;
+    padding: 20px 10px 20px 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    background-color: #6960AA;
+    align-items: center;
+}
+
+#work > h2{
+    color: #C6A57A;
+    margin-right: 30px;
+    margin-left: 10px;
+}
+
+.work-text{
+    font-size: larger;
+}
+
+#trabajos{
+    display: flex;
+    justify-content: center;
+}
+
+
+.work1, .work2, .work3{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 300px;
+}
+
+img{
+    max-width: 50%;
+}
+
+
+
+
+
+
+/* Sobre Mi y Footer*/
+
+
+#sobre_mi{
+    display: flex;
+    width: 70%;
+    height: auto;
+    margin: auto;
+    margin-top: 5%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card-content{
+    display: flex;
+    align-items: center;
+}
+
+
+button{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 16px;
+}
+
+a{
+    text-decoration: none;
+    color: #04292F;
+}
+
+
+.contact-title{
+   justify-content: center;
+}
+
+
+#contacto > ul{
+    display:flex;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 15px;
+}
+
+#contacto > li > a{ 
+    text-decoration: none;
+    color: #CBB9A1;
+    margin: auto;
+}
