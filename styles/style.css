@@ -146,6 +146,8 @@ li:hover{
 
 .habilidad > h2{
     color: #c6a57a;
+    margin-left: 45%;
+    margin-bottom: 50px;
 }
 
 .progress-bar {
@@ -211,10 +213,6 @@ span > .corchete > p{
     margin-left: 10px;
 }
 
-.work-text{
-    font-size: larger;
-}
-
 #trabajos{
     display: flex;
     justify-content: center;
@@ -226,6 +224,24 @@ span > .corchete > p{
     margin-left: 50px;
     margin-right: 50px;
     width: 300px;
+}
+
+.work1 > img{
+    max-width: 200px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.work2 > img{
+    max-width: 200px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.work3 > img{
+    max-width: 200px;
+    margin-top: 20px;
+    margin-left: 50px;
 }
 
 span > a{
