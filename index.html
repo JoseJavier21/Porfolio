@@ -1,169 +1,116 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/styles/imagenes/logoNewAlfa.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="./javascript/javascript.js">
     <title>Document</title>
 </head>
+
 <body>
 
     <nav>
-
         <img src="styles/imagenes/Img_logo/logoNewAlfa.png" alt="logo">
-    
         <ul class="btn">
             <li><a href='#prese'>Inicio</a></li>
             <li><a href="#trabajos">Trabajos</a></li>
             <li><a href="#sobre_mi">Sobre Mi</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
-    
     </nav>
 
-
-    <div id="prese">   
-        
+    <div id="prese">
         <h2>Bienvenidos a mi porfolio soy<pre class="nombre">José Javier</pre></h2>
-        <img src="styles/imagenes/imagenMia.jpeg" alt="foto mia">
-
+        <img class="img-fluid" src="styles/imagenes/imagenMia.jpeg" alt="foto mia">
     </div>
 
-
-    <span >
+    <span>
         <img class="corchete" src="styles/imagenes/soporte-abierto.png" alt="corchete">
     </span>
 
     <div class="habilidad">
-
         <h2>Habilidades:</h2>
-
         <div class="progress-bar">
             <div class="skill">Diseño Web</div>
             <div class="progress">
-              <div class="progress-value" style="width: 30%;"></div>
+                <div class="progress-value" style="width: 30%;"></div>
             </div>
-          </div>
-        
-          <div class="progress-bar">
-            <div class="skill">Desarrollo Frontend</div>
-            <div class="progress">
-              <div class="progress-value" style="width: 50%;"></div>
-            </div>
-          </div>
-        
-          <div class="progress-bar">
-            <div class="skill">Programación Backend</div>
-            <div class="progress">
-              <div class="progress-value" style="width: 60%;"></div>
-            </div>
-          </div>
+        </div>
+
+        <!-- Agrega más bloques de habilidades aquí -->
 
     </div>
 
-
     <div id="work">
-
         <h2>Trabajos</h2>
-        
         <span class="work-text">
             <p>A lo largo de mi tiempo en el trabajo, he tenido la oportunidad de participar en diversos proyectos que reflejan mi habilidad y compromiso en el campo de la electromecánica de vehículos automóviles. Aquí, les presento algunos de mis trabajos.
             </p>
         </span>
-
     </div>
 
     <span id="trabajos">
-
-        <div class="work1">
-
+        <h2>Ejemplos:</h2>
+        <div class="work1 card">
             <h3>Android</h3>
-                <img mat-card-image src="styles/imagenes/calculator.png" alt="foto de trabajo">
-            </span>
-
+            <img class=".card-img-bottom" src="styles/imagenes/calculator.png" alt="foto de trabajo">
         </div>
 
-        <div class="work2">
-    
-            <h3>IOS</h3>
-                <img mat-card-image src="styles/imagenes/RickandMorty.png" alt="foto de trabajo">
-            </span>
-
-        </div>
-
-        <div class="work3">
-
-            <h3>WEB</h3>
-                <img src="styles/imagenes/webimg.jpg" alt="foto de trabajo">
-            </span>
-
-        </div>
+        <!-- Agrega más trabajos aquí -->
 
     </span>
 
-    <span> 
+    <span>
         <a href="https://github.com/JoseJavier21?tab=repositories" target="_blank">Repositorio</a>
     </span>
 
-
-
-
     <div id="sobre_mi">
         <h2>Sobre Mi</h2>
-
         <span class="text-content">
-            <p>
-            Mi nombre es José Javier, de 23 años nacido en Baza. La búsqueda de conocimiento y oportunidades me llevó a establecerme y estudiar en Linares. Siempre he sentido una profunda fascinación por los vehículos automóviles. Esta pasión no solo se convirtió en un hobby, sino en la brújula que guiaría mis decisiones profesionales desde muy temprana edad.
+            <p>Mi nombre es José Javier, de 23 años nacido en Baza. La búsqueda de conocimiento y oportunidades me llevó a establecerme y estudiar en Linares. Siempre he sentido una profunda fascinación por los vehículos automóviles. Esta pasión no solo se convirtió en un hobby, sino en la brújula que guiaría mis decisiones profesionales desde muy temprana edad.
             </p>
         </span>
         <span class="text-content">
-            <p>
-            Sin embargo, como todo apasionado de la tecnología y el desarrollo, sentí la llamada de la innovación y el deseo de diversificar mis habilidades. Con ese impulso, tomé la decisión de adentrarme en el estudio de Desarrollo de Aplicaciones Multiplataforma (DAM). Esta nueva aventura no solo representa una oportunidad para expandir mis capacidades técnicas, sino también para combinar mi amor por la electromecánica con las últimas tendencias en desarrollo digital.
+            <p>Sin embargo, como todo apasionado de la tecnología y el desarrollo, sentí la llamada de la innovación y el deseo de diversificar mis habilidades. Con ese impulso, tomé la decisión de adentrarme en el estudio de Desarrollo de Aplicaciones Multiplataforma (DAM). Esta nueva aventura no solo representa una oportunidad para expandir mis capacidades técnicas, sino también para combinar mi amor por la electromecánica con las últimas tendencias en desarrollo digital.
             </p>
-        </span> 
-
+        </span>
     </div>
 
-    <span >
+    <span>
         <img class="corchete" src="styles/imagenes/soporte-cerrado.png" alt="corchete">
     </span>
 
-    <a href="styles/josejavierCurriculum.pdf" download="josejavierCurriculum.pdf">
-    <button>Descargar Curriculum</button>
+    <a class="download_curri" href="styles/josejavierCurriculum.pdf" download="josejavierCurriculum.pdf">
+        <button>Descargar Curriculum
+            <img src="styles/imagenes/flecha.png" alt="flecha">
+        </button>
     </a>
 
     <div id="contacto">
- 
         <h2>Contacto</h2>
-
         <span>
             <p class="text-content">
-            Si deseas conocer más sobre mis habilidades, colaborar en proyectos o simplemente charlar sobre el mundo de la electromecánica y desarrollo de aplicaciones, ¡no dudes en ponerte en contacto conmigo!
+                Si deseas conocer más sobre mis habilidades, colaborar en proyectos o simplemente charlar sobre el mundo de la electromecánica y desarrollo de aplicaciones, ¡no dudes en ponerte en contacto conmigo!
             </p>
-
         </span>
-
         <ul>
-
             <li>
                 <a href="mailto:jose.jrf2000@gmail.com">Gmail</a>
             </li>
-    
             <li>
-                <a href="https://github.com/JoseJavier21">GitHub</a>
+                <a href="https://github.com/JoseJavier21" target="_blank">GitHub</a>
             </li>
-    
             <li>
                 <a href="#Linkedln">Linkedln</a>
             </li>
-    
         </ul>
-
     </div>
 
+    <!-- Tus scripts aquí -->
 
-
-    
 </body>
+
 </html>

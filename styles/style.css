@@ -7,13 +7,14 @@
     margin: 0;
     font-family: 'Fira Code', monospace;
     scroll-behavior: smooth;
+    box-sizing: content-box;
 }
 
 
 body{
     background: #2D2758; 
     /*background-color: #337781;*/
-    background: linear-gradient(to bottom, #2D2758, #7D72C5);
+    background: linear-gradient(to bottom, #2D2758, #847cba);
 }
 
 div{
@@ -107,9 +108,8 @@ li:hover{
     padding-left: 20px;
     font-size: larger;
     color: whitesmoke;
+    background-color: #04292f00;
     align-items: center;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-    
 }
 
 #prese > h2{
@@ -129,6 +129,10 @@ li:hover{
     width: 35%;
     padding: 20px 30px 20px 30px;
     margin-left: auto;
+    border-image: round;
+    background: aliceblue;
+    border-radius: 50px;
+    box-shadow: 0px 8px 6px 0px rgba(0, 0, 0, 0.60);
 }
 
 .corchete{
@@ -224,12 +228,27 @@ span > .corchete > p{
     margin-left: 50px;
     margin-right: 50px;
     width: 300px;
+    background-color: rgb(177, 162, 193);
+}
+
+.work1:hover, .work2:hover, .work3:hover{
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 300px;
+    background-color: rgb(231, 225, 237);
+}
+
+.work1:hover, .work2:hover, .work3:hover > img{
+    filter: brightness(80%);
+    filter:grayscale(0.5)
 }
 
 .work1 > img{
     max-width: 200px;
     margin-top: 20px;
     margin-left: 40px;
+
 }
 
 .work2 > img{
@@ -263,6 +282,45 @@ img{
     max-width: 50%;
 }
 
+/* Btn para descargar el curriculum*/
+
+.download_curri{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
+}
+
+.download_curri > button{
+
+    display: flex;
+    border-radius: 20px;
+    border: 0px solid;
+    background-color: rgb(227, 223, 223);
+    padding: 5px 10px 5px 10px;
+    align-items: center;
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.download_curri > button:hover{
+    display: flex;
+    border-radius: 20px;
+    border: 0px solid;
+    background-color: rgb(154, 68, 219);
+    padding: 5px 10px 5px 10px;
+    align-items: center;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    color: whitesmoke;
+    
+}
+
+.download_curri > button > img{
+    width: 50px;
+    margin-left: 10px;
+}
+
+
+
 
 /* Sobre Mi y Footer*/
 
@@ -273,7 +331,7 @@ img{
     height: auto;
     margin: auto;
     margin-top: 10%;
-    align-items: center;
+    align-items: center;;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -304,11 +362,18 @@ a{
     color: whitesmoke;
 }
 
-
-.contact-title{
-   justify-content: center;
+#contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.50);
 }
 
+#contacto > span{
+    width: 80%;
+}
 
 #contacto > ul{
     display:flex;
@@ -324,3 +389,68 @@ a{
     color: #CBB9A1;
     margin: auto;
 }
+
+@media only screen and (max-width: 768px) {
+    #prese {
+        margin: 10% 5% 10% 5%;
+    }
+
+    .progress-bar {
+        margin: 20px 5% 20px 5%;
+    }
+
+    #work {
+        margin: 5% 5% 10% 5%;
+    }
+
+    #sobre_mi {
+        width: 100%;
+    }
+}
+
+/* Media Queries para pantallas de hasta 400px */
+@media only screen and (max-width: 400px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav > img {
+        margin: 10px 0;
+    }
+
+    ul {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    li {
+        margin: 5px 0;
+    }
+
+    #prese {
+        margin: 10% 5% 10% 5%;
+    }
+
+    .progress-bar {
+        margin: 20px 5% 20px 5%;
+    }
+
+    #work {
+        margin: 5% 5% 10% 5%;
+    }
+
+    #sobre_mi {
+        width: 100%;
+    }
+
+    .download_curri {
+        margin-left: 5%;
+    }
+
+    #contacto {
+        margin-bottom: 10%;
+    }
+}
+
